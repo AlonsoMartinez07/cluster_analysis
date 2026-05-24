@@ -87,49 +87,6 @@ See `analysis/README.md` for output folder details.
 
 ---
 
-## Quick start (Windows)
-
-Clone this repo, then point `config.yaml` at your local `DCEC` and simulation directories.
-
-```cmd
-cd D:\GENE_simulation_AI\cluster_analysis
-```
-
-**1. Sync existing DCEC outputs (fast)**
-
-```cmd
-run_sync_results.cmd
-```
-
-**2. Full pipeline** (Maxwellian embed, TDA, per-method robustness + 3D + cluster-colored maps)
-
-```cmd
-run_full_pipeline.cmd
-```
-
-Skip re-clustering if assignments are already current:
-
-```cmd
-run_full_pipeline_skip_clustering.cmd
-```
-
-**3. Browse one cluster** (RGB diff + f_sim contours)
-
-```cmd
-run_browse_cluster.cmd
-```
-
-**4. DeepDPM only** (long; run from DCEC)
-
-```cmd
-D:\GENE_simulation_AI\DCEC\run_deepdpm_combined20d_pipeline.cmd
-```
-
-Python venv: `D:\GENE_simulation_AI\DCEC\torch_DCEC_RGB\venv`  
-(`pip install pyyaml` if orchestration scripts fail on import)
-
----
-
 ## Where to open results
 
 | What | Path |
