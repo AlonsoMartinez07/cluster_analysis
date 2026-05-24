@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>UMAP/PaCMAP Robustness Sweep</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 18px; background: #f8f9fb; }
+    h1,h2 { margin: 8px 0; }
+    .meta { padding: 10px 12px; background: #fff; border: 1px solid #ddd; border-radius: 8px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(360px,1fr)); gap: 14px; margin-top: 12px; }
+    .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .txt { padding: 8px 10px; font-size: 13px; line-height: 1.3; }
+    .small img { max-height: 280px; object-fit: contain; background: #fff; }
+    .hint { color: #444; font-size: 13px; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>UMAP/PaCMAP robustness sweep</h1>
+  <div class="meta">
+    <div><b>Representation:</b> combined</div>
+    <div><b>Samples:</b> 1116 | <b>Feature dim:</b> 20</div>
+    <div><b>Runs generated:</b> 24</div>
+    <div class="hint">Click any image to open full-size. Compare shape consistency across seeds/hyperparameters.</div>
+  </div>
+
+  <h2>Embedding Runs</h2>
+  <div class="grid">
+    
+            <div class="card">
+              <a href="run_001_seed7_uNN30_uMD0.01_pNN10_pMN1_pFP4.png" target="_blank"><img src="run_001_seed7_uNN30_uMD0.01_pNN10_pMN1_pFP4.png" alt="run_001_seed7_uNN30_uMD0.01_pNN10_pMN1_pFP4.png"></a>
+              <div class="txt"><b>run_001_seed7_uNN30_uMD0.01_pNN10_pMN1_pFP4</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.01), PaCMAP(n_neighbors=10, MN=1, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_002_seed7_uNN30_uMD0.1_pNNauto_pMN0.5_pFP2.png" target="_blank"><img src="run_002_seed7_uNN30_uMD0.1_pNNauto_pMN0.5_pFP2.png" alt="run_002_seed7_uNN30_uMD0.1_pNNauto_pMN0.5_pFP2.png"></a>
+              <div class="txt"><b>run_002_seed7_uNN30_uMD0.1_pNNauto_pMN0.5_pFP2</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.1), PaCMAP(n_neighbors=auto, MN=0.5, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_003_seed7_uNN30_uMD0.1_pNN10_pMN1_pFP2.png" target="_blank"><img src="run_003_seed7_uNN30_uMD0.1_pNN10_pMN1_pFP2.png" alt="run_003_seed7_uNN30_uMD0.1_pNN10_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_003_seed7_uNN30_uMD0.1_pNN10_pMN1_pFP2</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.1), PaCMAP(n_neighbors=10, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_004_seed7_uNN30_uMD0.1_pNN30_pMN0.5_pFP4.png" target="_blank"><img src="run_004_seed7_uNN30_uMD0.1_pNN30_pMN0.5_pFP4.png" alt="run_004_seed7_uNN30_uMD0.1_pNN30_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_004_seed7_uNN30_uMD0.1_pNN30_pMN0.5_pFP4</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.1), PaCMAP(n_neighbors=30, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_005_seed7_uNN30_uMD0.3_pNNauto_pMN0.5_pFP4.png" target="_blank"><img src="run_005_seed7_uNN30_uMD0.3_pNNauto_pMN0.5_pFP4.png" alt="run_005_seed7_uNN30_uMD0.3_pNNauto_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_005_seed7_uNN30_uMD0.3_pNNauto_pMN0.5_pFP4</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.3), PaCMAP(n_neighbors=auto, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_006_seed7_uNN30_uMD0.3_pNN30_pMN1_pFP2.png" target="_blank"><img src="run_006_seed7_uNN30_uMD0.3_pNN30_pMN1_pFP2.png" alt="run_006_seed7_uNN30_uMD0.3_pNN30_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_006_seed7_uNN30_uMD0.3_pNN30_pMN1_pFP2</b><br>seed=7, UMAP(n_neighbors=30, min_dist=0.3), PaCMAP(n_neighbors=30, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_007_seed7_uNN50_uMD0.1_pNN30_pMN1_pFP2.png" target="_blank"><img src="run_007_seed7_uNN50_uMD0.1_pNN30_pMN1_pFP2.png" alt="run_007_seed7_uNN50_uMD0.1_pNN30_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_007_seed7_uNN50_uMD0.1_pNN30_pMN1_pFP2</b><br>seed=7, UMAP(n_neighbors=50, min_dist=0.1), PaCMAP(n_neighbors=30, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_008_seed7_uNN50_uMD0.3_pNN10_pMN1_pFP4.png" target="_blank"><img src="run_008_seed7_uNN50_uMD0.3_pNN10_pMN1_pFP4.png" alt="run_008_seed7_uNN50_uMD0.3_pNN10_pMN1_pFP4.png"></a>
+              <div class="txt"><b>run_008_seed7_uNN50_uMD0.3_pNN10_pMN1_pFP4</b><br>seed=7, UMAP(n_neighbors=50, min_dist=0.3), PaCMAP(n_neighbors=10, MN=1, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_009_seed42_uNN10_uMD0.1_pNN10_pMN1_pFP4.png" target="_blank"><img src="run_009_seed42_uNN10_uMD0.1_pNN10_pMN1_pFP4.png" alt="run_009_seed42_uNN10_uMD0.1_pNN10_pMN1_pFP4.png"></a>
+              <div class="txt"><b>run_009_seed42_uNN10_uMD0.1_pNN10_pMN1_pFP4</b><br>seed=42, UMAP(n_neighbors=10, min_dist=0.1), PaCMAP(n_neighbors=10, MN=1, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_010_seed42_uNN30_uMD0.1_pNN30_pMN1_pFP2.png" target="_blank"><img src="run_010_seed42_uNN30_uMD0.1_pNN30_pMN1_pFP2.png" alt="run_010_seed42_uNN30_uMD0.1_pNN30_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_010_seed42_uNN30_uMD0.1_pNN30_pMN1_pFP2</b><br>seed=42, UMAP(n_neighbors=30, min_dist=0.1), PaCMAP(n_neighbors=30, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_011_seed42_uNN50_uMD0.01_pNNauto_pMN0.5_pFP2.png" target="_blank"><img src="run_011_seed42_uNN50_uMD0.01_pNNauto_pMN0.5_pFP2.png" alt="run_011_seed42_uNN50_uMD0.01_pNNauto_pMN0.5_pFP2.png"></a>
+              <div class="txt"><b>run_011_seed42_uNN50_uMD0.01_pNNauto_pMN0.5_pFP2</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.01), PaCMAP(n_neighbors=auto, MN=0.5, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_012_seed42_uNN50_uMD0.01_pNN30_pMN0.5_pFP4.png" target="_blank"><img src="run_012_seed42_uNN50_uMD0.01_pNN30_pMN0.5_pFP4.png" alt="run_012_seed42_uNN50_uMD0.01_pNN30_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_012_seed42_uNN50_uMD0.01_pNN30_pMN0.5_pFP4</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.01), PaCMAP(n_neighbors=30, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_013_seed42_uNN50_uMD0.1_pNNauto_pMN1_pFP2.png" target="_blank"><img src="run_013_seed42_uNN50_uMD0.1_pNNauto_pMN1_pFP2.png" alt="run_013_seed42_uNN50_uMD0.1_pNNauto_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_013_seed42_uNN50_uMD0.1_pNNauto_pMN1_pFP2</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.1), PaCMAP(n_neighbors=auto, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_014_seed42_uNN50_uMD0.3_pNN10_pMN0.5_pFP4.png" target="_blank"><img src="run_014_seed42_uNN50_uMD0.3_pNN10_pMN0.5_pFP4.png" alt="run_014_seed42_uNN50_uMD0.3_pNN10_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_014_seed42_uNN50_uMD0.3_pNN10_pMN0.5_pFP4</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.3), PaCMAP(n_neighbors=10, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_015_seed42_uNN50_uMD0.3_pNN30_pMN0.5_pFP4.png" target="_blank"><img src="run_015_seed42_uNN50_uMD0.3_pNN30_pMN0.5_pFP4.png" alt="run_015_seed42_uNN50_uMD0.3_pNN30_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_015_seed42_uNN50_uMD0.3_pNN30_pMN0.5_pFP4</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.3), PaCMAP(n_neighbors=30, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_016_seed42_uNN50_uMD0.3_pNN30_pMN1_pFP2.png" target="_blank"><img src="run_016_seed42_uNN50_uMD0.3_pNN30_pMN1_pFP2.png" alt="run_016_seed42_uNN50_uMD0.3_pNN30_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_016_seed42_uNN50_uMD0.3_pNN30_pMN1_pFP2</b><br>seed=42, UMAP(n_neighbors=50, min_dist=0.3), PaCMAP(n_neighbors=30, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_017_seed99_uNN10_uMD0.1_pNNauto_pMN1_pFP2.png" target="_blank"><img src="run_017_seed99_uNN10_uMD0.1_pNNauto_pMN1_pFP2.png" alt="run_017_seed99_uNN10_uMD0.1_pNNauto_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_017_seed99_uNN10_uMD0.1_pNNauto_pMN1_pFP2</b><br>seed=99, UMAP(n_neighbors=10, min_dist=0.1), PaCMAP(n_neighbors=auto, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_018_seed99_uNN15_uMD0.01_pNNauto_pMN0.5_pFP2.png" target="_blank"><img src="run_018_seed99_uNN15_uMD0.01_pNNauto_pMN0.5_pFP2.png" alt="run_018_seed99_uNN15_uMD0.01_pNNauto_pMN0.5_pFP2.png"></a>
+              <div class="txt"><b>run_018_seed99_uNN15_uMD0.01_pNNauto_pMN0.5_pFP2</b><br>seed=99, UMAP(n_neighbors=15, min_dist=0.01), PaCMAP(n_neighbors=auto, MN=0.5, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_019_seed99_uNN15_uMD0.01_pNN10_pMN1_pFP2.png" target="_blank"><img src="run_019_seed99_uNN15_uMD0.01_pNN10_pMN1_pFP2.png" alt="run_019_seed99_uNN15_uMD0.01_pNN10_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_019_seed99_uNN15_uMD0.01_pNN10_pMN1_pFP2</b><br>seed=99, UMAP(n_neighbors=15, min_dist=0.01), PaCMAP(n_neighbors=10, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_020_seed99_uNN15_uMD0.3_pNNauto_pMN1_pFP4.png" target="_blank"><img src="run_020_seed99_uNN15_uMD0.3_pNNauto_pMN1_pFP4.png" alt="run_020_seed99_uNN15_uMD0.3_pNNauto_pMN1_pFP4.png"></a>
+              <div class="txt"><b>run_020_seed99_uNN15_uMD0.3_pNNauto_pMN1_pFP4</b><br>seed=99, UMAP(n_neighbors=15, min_dist=0.3), PaCMAP(n_neighbors=auto, MN=1, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_021_seed99_uNN30_uMD0.3_pNN30_pMN1_pFP2.png" target="_blank"><img src="run_021_seed99_uNN30_uMD0.3_pNN30_pMN1_pFP2.png" alt="run_021_seed99_uNN30_uMD0.3_pNN30_pMN1_pFP2.png"></a>
+              <div class="txt"><b>run_021_seed99_uNN30_uMD0.3_pNN30_pMN1_pFP2</b><br>seed=99, UMAP(n_neighbors=30, min_dist=0.3), PaCMAP(n_neighbors=30, MN=1, FP=2)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_022_seed99_uNN50_uMD0.01_pNN10_pMN1_pFP4.png" target="_blank"><img src="run_022_seed99_uNN50_uMD0.01_pNN10_pMN1_pFP4.png" alt="run_022_seed99_uNN50_uMD0.01_pNN10_pMN1_pFP4.png"></a>
+              <div class="txt"><b>run_022_seed99_uNN50_uMD0.01_pNN10_pMN1_pFP4</b><br>seed=99, UMAP(n_neighbors=50, min_dist=0.01), PaCMAP(n_neighbors=10, MN=1, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_023_seed99_uNN50_uMD0.1_pNNauto_pMN0.5_pFP4.png" target="_blank"><img src="run_023_seed99_uNN50_uMD0.1_pNNauto_pMN0.5_pFP4.png" alt="run_023_seed99_uNN50_uMD0.1_pNNauto_pMN0.5_pFP4.png"></a>
+              <div class="txt"><b>run_023_seed99_uNN50_uMD0.1_pNNauto_pMN0.5_pFP4</b><br>seed=99, UMAP(n_neighbors=50, min_dist=0.1), PaCMAP(n_neighbors=auto, MN=0.5, FP=4)</div>
+            </div>
+            
+            <div class="card">
+              <a href="run_024_seed99_uNN50_uMD0.1_pNN10_pMN0.5_pFP2.png" target="_blank"><img src="run_024_seed99_uNN50_uMD0.1_pNN10_pMN0.5_pFP2.png" alt="run_024_seed99_uNN50_uMD0.1_pNN10_pMN0.5_pFP2.png"></a>
+              <div class="txt"><b>run_024_seed99_uNN50_uMD0.1_pNN10_pMN0.5_pFP2</b><br>seed=99, UMAP(n_neighbors=50, min_dist=0.1), PaCMAP(n_neighbors=10, MN=0.5, FP=2)</div>
+            </div>
+            
+  </div>
+
+  <h2>kNN Cluster Distance Checks</h2>
+  <div class="grid">
+    
+            <div class="card small">
+              <a href="knn_gap_ratio_k10.png" target="_blank"><img src="knn_gap_ratio_k10.png" alt="knn_gap_ratio_k10.png"></a>
+              <div class="txt">knn_gap_ratio_k10.png</div>
+            </div>
+            
+            <div class="card small">
+              <a href="knn_hist_k10_page_01.png" target="_blank"><img src="knn_hist_k10_page_01.png" alt="knn_hist_k10_page_01.png"></a>
+              <div class="txt">knn_hist_k10_page_01.png</div>
+            </div>
+            
+  </div>
+</body>
+</html>

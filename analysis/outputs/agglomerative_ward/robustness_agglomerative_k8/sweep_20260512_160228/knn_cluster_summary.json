@@ -1,0 +1,66 @@
+[
+  {
+    "cluster": 0,
+    "n_points": 80,
+    "k": 10,
+    "median_intra_kdist": 2.212275801534777,
+    "median_nearest_other_dist": 3.698098057723234,
+    "gap_ratio_other_over_intra": 1.6716261395426648
+  },
+  {
+    "cluster": 1,
+    "n_points": 260,
+    "k": 10,
+    "median_intra_kdist": 0.9942019654064609,
+    "median_nearest_other_dist": 2.4707363179741204,
+    "gap_ratio_other_over_intra": 2.485145276255822
+  },
+  {
+    "cluster": 2,
+    "n_points": 153,
+    "k": 10,
+    "median_intra_kdist": 2.2868805150503357,
+    "median_nearest_other_dist": 2.723216159120512,
+    "gap_ratio_other_over_intra": 1.1907994935452815
+  },
+  {
+    "cluster": 3,
+    "n_points": 233,
+    "k": 10,
+    "median_intra_kdist": 1.1657274802671607,
+    "median_nearest_other_dist": 2.039004913744853,
+    "gap_ratio_other_over_intra": 1.7491265739721218
+  },
+  {
+    "cluster": 4,
+    "n_points": 170,
+    "k": 10,
+    "median_intra_kdist": 2.1033543690035463,
+    "median_nearest_other_dist": 2.4866886552977867,
+    "gap_ratio_other_over_intra": 1.182249026575509
+  },
+  {
+    "cluster": 5,
+    "n_points": 94,
+    "k": 10,
+    "median_intra_kdist": 0.8709375160684347,
+    "median_nearest_other_dist": 2.9250705876384187,
+    "gap_ratio_other_over_intra": 3.3585309320956824
+  },
+  {
+    "cluster": 6,
+    "n_points": 63,
+    "k": 10,
+    "median_intra_kdist": 2.6185910775080217,
+    "median_nearest_other_dist": 3.676744749309504,
+    "gap_ratio_other_over_intra": 1.404092750827087
+  },
+  {
+    "cluster": 7,
+    "n_points": 63,
+    "k": 10,
+    "median_intra_kdist": 3.9201405671959995,
+    "median_nearest_other_dist": 3.576619240858498,
+    "gap_ratio_other_over_intra": 0.912370150904253
+  }
+]

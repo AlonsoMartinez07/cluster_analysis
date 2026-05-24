@@ -1,0 +1,15 @@
+maxwellian_embed: 0
+tda_exploratory: 0
+robustness_gmm: 0
+score3d_gmm: 0
+embed_gmm: 0
+robustness_agglomerative: 0
+score3d_agglomerative: 0
+embed_agglomerative: 0
+robustness_hdbscan: 0
+score3d_hdbscan: 0
+embed_hdbscan: 0
+robustness_deepdpm: 0
+score3d_deepdpm: 0
+embed_deepdpm: 0
+sync: 0

@@ -1,0 +1,31 @@
+# Paths for GENE electron cluster analysis (Windows).
+# Scripts in src/ resolve these; edit if your clone lives elsewhere.
+
+dce_root: D:/GENE_simulation_AI/DCEC
+torch_dcec_rgb: D:/GENE_simulation_AI/DCEC/torch_DCEC_RGB
+deepdpm_dir: D:/GENE_simulation_AI/DCEC/DeepDPM
+deepdpm_data: D:/GENE_simulation_AI/DCEC/DeepDPM/data/GENE_latent
+
+model_ae: nets/CAE_bn3_AE_lat13.pt
+dataset_rgb: D:/GENE_simulation_AI/DCEC/all_rgb
+normal_dir: D:/GENE_simulation_AI/simulation_normals/electron
+anomaly_dir: D:/GENE_simulation_AI/simulation_anomalies/electron/maxwellian_checker_v2_files
+
+physics_vars: temp_e,dens_e,omn_e,omt_e,beta,rhostar,x0
+latent_dim: 13
+
+# Clustering hyperparameters (shared across methods where applicable)
+k_min: 4
+k_max: 30
+gmm_final_k: 12
+agglomerative_final_k: 8
+deepdpm_init_k: 12
+deepdpm_max_epochs: 200
+deepdpm_niw_nu: 22
+
+# Score script (Maxwellian v7)
+score_v7_py: D:/GENE_simulation_AI/TPED/projects/GENE_AI_tools/vsp_ai_validator/maxwellian_score_calc/score_v7_Cursor.py
+maxwellian_sensitivity: 500
+
+# DCEC reports (shared TDA / Maxwellian reference copies)
+dce_validation_dir: D:/GENE_simulation_AI/DCEC/reports/umap_pacmap_validation

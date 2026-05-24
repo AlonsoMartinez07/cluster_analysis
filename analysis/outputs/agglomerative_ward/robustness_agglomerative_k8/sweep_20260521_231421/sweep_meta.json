@@ -1,0 +1,8 @@
+{
+  "representation": "combined",
+  "n_samples": 1116,
+  "feature_dim": 20,
+  "n_runs": 24,
+  "knn_k": 10,
+  "created_at": "2026-05-22T00:18:18"
+}

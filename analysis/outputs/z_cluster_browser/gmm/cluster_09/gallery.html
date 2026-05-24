@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>gmm — cluster 9</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1rem 2rem; background: #111; color: #eee; }
+    h1 { font-size: 1.4rem; }
+    .stats { color: #aaa; margin-bottom: 1.5rem; }
+    .grid { display: flex; flex-direction: column; gap: 1.2rem; }
+    .card { background: #1e1e1e; border-radius: 8px; padding: 0.8rem; }
+    .meta { margin-bottom: 0.5rem; font-size: 0.9rem; }
+    .tag { padding: 0.1rem 0.4rem; border-radius: 4px; margin-left: 0.5rem; font-size: 0.75rem; }
+    .tag.normal { background: #2d5a27; }
+    .tag.anomaly { background: #6b2d2d; }
+    .tag.unknown { background: #444; }
+    .score { margin-left: 0.8rem; color: #8cf; }
+    .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .lbl { font-size: 0.75rem; color: #888; margin-bottom: 0.25rem; }
+    img { max-width: 100%; height: auto; border-radius: 4px; background: #000; }
+    .missing { color: #666; font-size: 0.85rem; padding: 2rem; text-align: center;
+                border: 1px dashed #444; border-radius: 4px; }
+    @media (max-width: 900px) { .pair { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>gmm — cluster 9</h1>
+  <p class="stats">59 simulations —
+    normal: 57,
+    anomaly: 2,
+    unknown: 0.
+    Sorted by Maxwellian score (high → low).</p>
+  <div class="grid">
+    
+        <div class="card">
+          <div class="meta"><b>sim_0905</b>
+            <span class="tag anomaly">anomaly</span>
+            <span class="score">Maxwellian: 0.7501</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0905_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0905_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0485</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.7437</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0485_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0485_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_1040</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.7118</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_1040_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_1040_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0962</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6998</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0962_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0962_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0801</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6981</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0801_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0801_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0961</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6973</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0961_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0961_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0960</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6962</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0960_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0960_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0641</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6953</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0641_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0641_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0721</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6941</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0721_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0721_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0881</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6939</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0881_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0881_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0880</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6922</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0880_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0880_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0802</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6889</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0802_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0802_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0722</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6840</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0722_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0722_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0244</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6827</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0244_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0244_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0003</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6820</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0003_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0003_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0001</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6818</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0001_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0001_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0642</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6817</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0642_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0642_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0163</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6814</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0163_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0163_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0241</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6799</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0241_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0241_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0723</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6795</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0723_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0723_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0164</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6770</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0164_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0164_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0803</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6754</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0803_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0803_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0720</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6747</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0720_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0720_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0081</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6744</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0081_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0081_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0800</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6723</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0800_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0800_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0240</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6723</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0240_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0240_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0640</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6718</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0640_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0640_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0083</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6716</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0083_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0083_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0401</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6711</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0401_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0401_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0161</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6698</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0161_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0161_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0322</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6688</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0322_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0322_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0160</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6687</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0160_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><div class="missing">f_sim missing</div></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0565</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6686</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0565_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0565_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0243</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6676</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0243_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0243_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0481</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6671</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0481_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0481_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0321</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6659</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0321_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0321_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0002</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6653</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0002_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0002_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0080</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6637</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0080_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0080_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0082</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6630</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0082_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0082_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0320</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6626</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0320_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0320_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0000</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6612</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0000_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0000_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0566</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6587</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0566_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0566_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0564</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6579</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0564_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0564_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0400</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6564</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0400_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0400_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0242</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6562</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0242_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0242_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0561</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6558</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0561_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0561_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0162</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6554</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0162_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0162_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0560</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6545</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0560_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0560_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0563</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6543</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0563_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0563_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0404</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6519</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0404_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0404_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0484</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6514</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0484_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0484_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0402</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6509</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0402_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0402_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0482</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6506</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0482_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0482_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0562</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6480</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0562_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0562_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0483</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6471</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0483_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0483_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0480</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6463</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0480_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0480_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0323</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6425</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0323_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0323_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0403</b>
+            <span class="tag normal">normal</span>
+            <span class="score">Maxwellian: 0.6374</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0403_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0403_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="meta"><b>sim_0906</b>
+            <span class="tag anomaly">anomaly</span>
+            <span class="score">Maxwellian: 0.6277</span></div>
+          <div class="pair">
+            <div><div class="lbl">RGB diff (AE input)</div><img src="rgb/sim_0906_diff.png" alt="rgb" loading="lazy"/></div>
+            <div><div class="lbl">f_sim (v∥ vs μ)</div><img src="f_sim/sim_0906_fsim.png" alt="fsim" loading="lazy"/></div>
+          </div>
+        </div>
+  </div>
+</body>
+</html>

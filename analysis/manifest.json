@@ -1,0 +1,78 @@
+{
+  "gmm_bic": {
+    "final_k_bic": 12,
+    "assignments": "cluster_assignments.csv"
+  },
+  "agglomerative_ward": {
+    "silhouette_best_k": 8,
+    "assignments": "cluster_assignments_agglomerative_ward_k8.csv"
+  },
+  "hdbscan": {
+    "note": "density clustering; noise label -1"
+  },
+  "deepdpm_combined20d": {
+    "assignments": "cluster_assignments_deepdpm_combined20d.csv",
+    "n_clusters": 13
+  },
+  "robustness_gmm": {
+    "sweep_folder": "sweep_20260521_210634",
+    "index_html": "sweep_20260521_210634/index.html",
+    "assignments": "reports/cluster_visualizations/cluster_assignments.csv"
+  },
+  "robustness_agglomerative_k8": {
+    "sweep_folder": "sweep_20260521_231421",
+    "index_html": "sweep_20260521_231421/index.html",
+    "assignments": "reports/cluster_visualizations/cluster_assignments_agglomerative_ward_k8.csv"
+  },
+  "robustness_hdbscan": {
+    "sweep_folder": "sweep_20260522_012116",
+    "index_html": "sweep_20260522_012116/index.html",
+    "assignments": "reports/cluster_visualizations_hdbscan/cluster_assignments.csv"
+  },
+  "robustness_deepdpm": {
+    "sweep_folder": "sweep_20260522_032821",
+    "index_html": "sweep_20260522_032821/index.html",
+    "assignments": "reports/cluster_visualizations/cluster_assignments_deepdpm_combined20d.csv"
+  },
+  "embed_clusters_gmm": {
+    "files": [
+      "embed_umap_combined.png",
+      "embed_pacmap_combined.png",
+      "embed_umap_pacmap_combined.png"
+    ]
+  },
+  "embed_clusters_agglomerative_k8": {
+    "files": [
+      "embed_umap_combined.png",
+      "embed_pacmap_combined.png",
+      "embed_umap_pacmap_combined.png"
+    ]
+  },
+  "embed_clusters_hdbscan": {
+    "files": [
+      "embed_umap_combined.png",
+      "embed_pacmap_combined.png",
+      "embed_umap_pacmap_combined.png"
+    ]
+  },
+  "embed_clusters_deepdpm": {
+    "files": [
+      "embed_umap_combined.png",
+      "embed_pacmap_combined.png",
+      "embed_umap_pacmap_combined.png"
+    ]
+  },
+  "embed_maxwellian_combined": {
+    "files": [
+      "embed_umap_combined_maxwellian.png",
+      "embed_pacmap_combined_maxwellian.png",
+      "embed_umap_pacmap_combined_maxwellian.png",
+      "maxwellian_scores_combined.csv"
+    ]
+  },
+  "tda_exploratory": {
+    "persistence_png": "embed_persistence_combined.png",
+    "filtration_slider": "filtration_blob_demo_combined_pacmap_slider.html",
+    "mapper_html": "embed_mapper_combined.html"
+  }
+}

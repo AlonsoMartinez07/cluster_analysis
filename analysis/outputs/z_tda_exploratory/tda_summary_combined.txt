@@ -1,0 +1,20 @@
+TDA summary (exploratory; see JSON 'caveat')
+
+Kepler Mapper: node/edge/component counts depend on PCA lens, cover (--mapper_n_cubes), overlap, and local KMeans; they are not a substitute for BIC or a 'recommended' GMM k. Ripser H0: counts of long-lived bars on a Euclidean Vietoris–Rips build (often subsampled); interpret as multiscale connectivity hints, not mixture order selection.
+
+Points: 1116, feature dim: 20
+Reference GMM unique labels (excl. -1): 1
+Ripser: subsample n=600/1116
+
+Kepler Mapper:
+  nodes: 375
+  undirected edges: 806
+  connected components (undirected): 34
+
+H0 (finite deaths):
+  max_h0_lifetime: 6.703557968139648
+  n_h0_bars_finite: 599
+  n_h0_lifetime_gt_10pct_of_max: 372
+  n_h0_lifetime_gt_20pct_of_max: 200
+  n_h0_lifetime_gt_5pct_of_max: 562
+  top_h0_lifetimes: [6.703557968139648, 6.62428617477417, 5.113430023193359, 4.417189121246338, 3.8560543060302734]... (15 values, showing first 5)

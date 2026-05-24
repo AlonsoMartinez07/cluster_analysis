@@ -1,0 +1,17 @@
+logs/20*/
+logs/*.log
+!logs/README.md
+__pycache__/
+*.pyc
+# Regenerate with run_browse_cluster.cmd
+analysis/outputs/cluster_browser/**/rgb/
+analysis/outputs/cluster_browser/**/f_sim/
+# Robustness sweep panels (keep index.html, json, csv)
+analysis/outputs/robustness_*/sweep_*/run_*.png
+analysis/outputs/robustness_*/sweep_*/knn_hist_*.png
+analysis/outputs/robustness_*/sweep_*/knn_gap_*.png
+# Filtration animation frames + embedded slider (too large for GitHub; open local copy under DCEC/reports)
+analysis/outputs/**/filtration_blob_demo_*_frames/
+analysis/outputs/**/filtration_blob_demo_*_slider.html
+# Plotly 3D HTML can be large
+analysis/outputs/score3d_*/*_interactive.html
