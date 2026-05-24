@@ -1,6 +1,6 @@
 # GENE electron cluster analysis
 
-Standalone repository for **unsupervised clustering experiments** on GENE electron temperature simulations. This repo holds analysis scripts, logged runs, and curated outputs so the main [TPED](https://github.com/drdrhatch/TPED) codebase stays focused on validation tooling.
+Standalone repository for **unsupervised clustering experiments** on GENE electron velocity_space (vsp) simulations. This repo holds analysis scripts, logged runs, and curated outputs so the main [TPED](https://github.com/drdrhatch/TPED) codebase stays focused on validation tooling.
 
 **Dataset:** 1,116 simulations — RGB difference images (`_diff.png`) plus matching NetCDF physics files.
 
